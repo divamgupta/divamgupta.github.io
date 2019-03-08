@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An overview of Deep Learning based Clustering Techniques"
+title:  "An Overview of Deep Learning Based Clustering Techniques"
 author: divam
 categories: [ unsupervised-learning ]
 comments: false
@@ -25,7 +25,7 @@ One popular method to learn meaningful representations is deep auto-encoders. He
 
 ![]({{ site.baseurl }}/assets/images/posts/deep_cluster/ae.png)
 
-Running K Means on representation vectors learned by deep autoencoders tend to give better results compared to running K-means directly on the input vectors. For example in MNIST, clustering accuracy of K Means is 53.2% while running K-means on learned representations from auto encoders yield an accuracy of 78.9%.
+Running K-means on representation vectors learned by deep autoencoders tend to give better results compared to running K-means directly on the input vectors. For example in MNIST, clustering accuracy of K Means is 53.2% while running K-means on learned representations from auto encoders yield an accuracy of 78.9%.
 
 Other techniques to learn meaningful representations include :
 
