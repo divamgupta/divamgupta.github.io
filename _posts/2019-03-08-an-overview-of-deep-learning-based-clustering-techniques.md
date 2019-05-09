@@ -9,7 +9,7 @@ image: "assets/images/posts/deep_cluster/teaser.png"
 featured: true
 ---
 
-This post gives an overview of various deep learning based clustering techniques. I will be explaining the latest advances in unsupervised clustering which achieve state-of-the-art performance by leverage deep learning.
+This post gives an overview of various deep learning based clustering techniques. I will be explaining the latest advances in unsupervised clustering which achieve the state-of-the-art performance by leveraging deep learning.
 
 Unsupervised learning is an active field of research and has always been a challenge in deep learning. Finding out meaningful patterns from large datasets without the presence of labels is extremely helpful for many applications. Advances in unsupervised learning are very crucial for artificial general intelligence. Performing unsupervised clustering is equivalent to building a classifier without using labeled samples. 
 
