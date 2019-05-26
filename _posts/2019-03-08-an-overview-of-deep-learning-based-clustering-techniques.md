@@ -3,7 +3,7 @@ layout: post
 title:  "An Overview of Deep Learning Based Clustering Techniques"
 author: divam
 categories: [ unsupervised-learning ]
-comments: false
+comments: true
 hidden: false
 image: "assets/images/posts/deep_cluster/teaser.png"
 featured: true
