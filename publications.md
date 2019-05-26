@@ -14,13 +14,13 @@ comments: false
 
       <div class="col-md-8">
         <h5 class="item-title" style="font-weight: 700; margin-bottom: 0.5rem; ">
-            SELFIE: Deep Clustering with Self-supervised Iterative Ensembles
+            Unsupervised Clustering using Pseudo-semi-supervised Learning
         </h5>
         <h6  style="font-weight: 500; margin-bottom: 0.5rem; ">
             <b>Divam Gupta</b>, Ramachandran Ramjee, Nipun Kwatra, Muthian Sivathanu
         </h6>
         <h6  style="font-weight: 500; margin-bottom: 0.5rem; " >
-            ICML 2019 <b>Currently Under Review </b>
+            NeurIPS 2019 <b>Currently Under Review </b>
         </h6>
         
       </div>
