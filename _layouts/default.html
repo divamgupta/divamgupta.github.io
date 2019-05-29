@@ -19,7 +19,28 @@
 <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
     
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
-    
+
+<style type="text/css">
+            
+    @media screen and (min-width: 900px ){
+
+        .toggjgr {
+            padding-bottom: 132px   !important  ; 
+            padding-top: 132px  !important ; 
+        }
+
+        .bandu{
+            font-size: 35px   !important  ; 
+        }
+
+        .doosrabandu{
+            font-size: 22px  !important  ;
+        }
+    }
+
+</style>
+
+
 </head>
     
 {% if jekyll.environment == 'production' %}
@@ -37,91 +58,97 @@
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
 
-    
+
+
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top mediumnavigation nav-down" style="background-color: rgb(0,0,0) ; {% if page.url == "/" %} position: static ; display:block; padding-bottom: 15px; {% endif %} ">
     
-    <div class="container pr-0">    
-    
-    <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
-    DIVAM GUPTA
-    </a>
-    <!-- End Logo -->
-  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    
-    <div class="collapse navbar-collapse" id="navbarMediumish">
-       
-        <!-- Begin Menu -->
-        
-            <ul class="navbar-nav ml-auto">
-                
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
-                </li>
-                
-                {% if page.url == "/about.html" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
 
-
-                {% if page.url == "/publications.html" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/publications">Publications</a>
-                </li>
-
-
-
-              <!--   
-                <li class="nav-item">
-                <a class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip"><i class="fas fa-download"></i> Download</a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li> -->
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/divamgupta/"><i class="fab fa-github"></i></a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank"  class="nav-link" href="https://twitter.com/divamgupta"><i class="fab fa-twitter"></i></a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank"  class="nav-link" href="https://www.linkedin.com/in/divamgupta/"><i class="fab fa-linkedin"></i></a>
-                </li>
-
-              
-
-                
-            </ul>		
-  
-        <!-- End Menu -->
-
+    {% if page.url == "/" %}
+    <div class="container pr-0 toggjgr" style=" padding-bottom: 56px  ; padding-top: 56px ; display:block">   
+      <!-- Begin Logo -->
+        <a style="font-size: 23px ;" class="navbar-brand bandu" href="{{ site.baseurl }}/">
+        <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
+        Divam Gupta's Blog
+        </a>
+        <br>
+        <h2 class="doosrabandu" style="color: #B1AEAE ; font-size: 17px; font-weight: 400 ">I'm a research fellow at Microsoft Research. I blog about Machine Learning and Deep Learning.</h2>
+        <!-- End Logo -->
     </div>
+    {% endif %}
+
+    <div class="container pr-0">    
+
+        {% if page.url != "/" %}
+            <!-- Begin Logo -->
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+            <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
+            Divam Gupta
+            </a>
+            <!-- End Logo -->
+        {% endif %}
+
+
+       
+                
+      
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+           
+            <!-- Begin Menu -->
+            
+                <ul class="navbar-nav ml-auto">
+                    
+                    {% if page.url == "/" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
+                    </li>
+                    
+                    {% if page.url == "/about.html" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                    </li>
+
+
+                    {% if page.url == "/publications.html" %}
+                    <li class="nav-item active">
+                    {% else %}
+                    <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.baseurl }}/publications">Publications</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://github.com/divamgupta/"><i class="fab fa-github"></i></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                    <a target="_blank"  class="nav-link" href="https://twitter.com/divamgupta"><i class="fab fa-twitter"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a target="_blank"  class="nav-link" href="https://www.linkedin.com/in/divamgupta/"><i class="fab fa-linkedin"></i></a>
+                    </li>
+
+                  
+                </ul>		
+      
+            <!-- End Menu -->
+
+        </div>
         
     </div>
 </nav>
@@ -131,21 +158,6 @@
 <div class="site-content">   
 <div class="container">
     
-<!-- Site Title
-================================================== -->
-
-{% if page.url == "/" %}
-    <div class="mainheading">
-        <h1 class="sitetitle">{{ site.name }}</h1>
-        <p class="lead">
-             {{ site.description }}
-        </p>
-    </div>
-{% endif %}
-
-
-
-
     
     
 <!-- Content
