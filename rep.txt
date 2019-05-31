@@ -1,0 +1,6 @@
+"image_tooltip") -> )
+remove lines with >>>>>>  gd2m
+split by #post_start
+replace ![alt_text](images/
+![]({{ site.baseurl }}/assets/images/posts/vat/
+.png -> ?style=centerme)
