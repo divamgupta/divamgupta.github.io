@@ -52,6 +52,7 @@ An easy way for LDS regularization is to generate artificial data-points by appl
 
 
 ![]({{ site.baseurl }}/assets/images/posts/vat/image7.png?style=centerme)
+*Example of input data transformation*
 {: style="font-size: 80%; text-align: center;"}
 
 
@@ -64,6 +65,7 @@ Virtual adversarial training is an effective technique for local distribution sm
 
 
 ![]({{ site.baseurl }}/assets/images/posts/vat/image2.png?style=centerme)
+*Step 1 : Generate the adversarial image*
 {: style="font-size: 80%; text-align: center;"}
 
 
@@ -71,6 +73,7 @@ Virtual adversarial training is an effective technique for local distribution sm
 
 
 ![]({{ site.baseurl }}/assets/images/posts/vat/image3.png?style=centerme)
+*Step 2: Minimize the KL divergence*
 {: style="font-size: 80%; text-align: center;"}
 
 The key steps for virtual adversarial training are:

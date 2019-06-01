@@ -29,7 +29,7 @@ for l in lines:
 print "fn" , fn
 print "short_name" , short_name
 
-lines = open("/tmp/post.md").read().split("#post_start")[1].split("\n")
+lines = open("/tmp/post.md").read().split("#post_start")[1].replace("/export/png)" , "/export/png)\n").split("\n")
 lines = [l for l in lines if not ">>>>>>  gd2m" in l]
 lines = [l for l in lines if not "<!-- Docs to Ma" in l]
 
