@@ -53,3 +53,4 @@ lines = lines.replace("\n\n---\n\nlay" , "---\n\nlay")
 
 open("_posts/"+ fn +".md",'w').write(lines)
 
+
