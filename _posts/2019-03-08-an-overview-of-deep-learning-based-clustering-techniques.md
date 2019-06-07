@@ -25,11 +25,11 @@ One popular method to learn meaningful representations is deep auto-encoders. He
 
 ![]({{ site.baseurl }}/assets/images/posts/deep_cluster/ae.png)
 
-Running K-means on representation vectors learned by deep autoencoders tend to give better results compared to running K-means directly on the input vectors. For example in MNIST, clustering accuracy of K Means is 53.2% while running K-means on learned representations from auto encoders yield an accuracy of 78.9%.
+Running K-means on representation vectors learned by deep autoencoders tend to give better results compared to running K-means directly on the input vectors. For example in MNIST, clustering accuracy of K Means is 53.2% while running K-means on the learned representations from auto-encoders yield an accuracy of 78.9%.
 
 Other techniques to learn meaningful representations include :
 
-* [Variational Autoencoders ](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/Variational Autoencoders)
+* [Variational Autoencoders ](<https://jaan.io/what-is-variational-autoencoder-vae-tutorial/>)
 * [Sparse Autoencoders](https://web.stanford.edu/class/cs294a/sparseAutoencoder.pdf)
 * [Deep InfoMax](https://openreview.net/pdf?id=Bklr3j0cKX) 
 * [BiGAN](https://openreview.net/pdf?id=B1ElR4cgg)
@@ -46,7 +46,7 @@ Here it is maximizing the marginal entropy *H(Y)* and minimizing the conditional
 
 By maximizing *H(Y)*, the cluster assignments are diverse, hence the model cannot degenerate by assigning a single cluster to all the input data points. In fact, it will try to make the distribution of clusters as uniform as possible because entropy will be maximum when the probability of each cluster is the same.  
 
-The neural network model with the softmax activation in the end actually estimates the conditional probability *p( y\|x )*. By minimizing *H( Y\|X )*, it ensures that the cluster assignment of any data point is with high confidence. If *H( Y\|X )* is not minimized and only *H(Y)* is maximized, the model can degenerate by assigning an equal conditional probability to each cluster given any input. 
+The neural network model with the softmax activation estimates the conditional probability *p( y\|x )*. By minimizing *H( Y\|X )*, it ensures that the cluster assignment of any data point is with high confidence. If *H( Y\|X )* is not minimized and only *H(Y)* is maximized, the model can degenerate by assigning an equal conditional probability to each cluster given any input. 
 
 While implementing in order to compute H(Y), p(y) is computed by marginalizing *p( y\|x )* over a mini-batch. For a given *x*,  *p( y\|x )* is the output of the network after the softmax activation. 
 
@@ -74,11 +74,11 @@ Deep adaptive clustering ( DAC ) uses a pairwise binary classification framework
 
 ![]({{ site.baseurl }}/assets/images/posts/deep_cluster/dac.png)
 
-As the ground truth data is not available, the features of the same network are used to create binary labels for the pairwise training. Cosine distance between the features of the two data-points is used. GIven an input pair, if the cosine distance is greater than the upper threshold, then the input pair is considered a positive pair ( meaning both should be in the same cluster). Similarly,  if the cosine distance is lesser than the lower threshold then the input pair is considered a negative pair ( meaning both should be in different clusters ). If the distance lies between the lower threshold and the upper threshold, the pair is ignored. After getting the positive and the negative pairs, the pairwise loss is minimized.
+As the ground truth data is not available, the features of the same network are used to create binary labels for the pairwise training. Cosine distance between the features of the two data-points is used. Given an input pair, if the cosine distance is greater than the upper threshold, then the input pair is considered a positive pair ( meaning both should be in the same cluster). Similarly,  if the cosine distance is lesser than the lower threshold then the input pair is considered a negative pair ( meaning both should be in different clusters ). If the distance lies between the lower threshold and the upper threshold, the pair is ignored. After getting the positive and the negative pairs, the pairwise loss is minimized.
 
  As the pairwise loss is minimized, it becomes better in classifying pair of data-points and the features of the network become more meaningful. With features becoming more meaningful, the binary labels obtained via cosine distance of the features become more accurate. 
 
-You may think this as a chicken and egg problem and the question is how to get a good start. The solution is having a good random initialization distribution. WIth standard initialization techniques, even with random model weights output is related to the inputs  ( behaving like [extreme learning machine](https://en.wikipedia.org/wiki/Extreme_learning_machine) ). Hence cosine distance of the features is somewhat meaningful in the beginning.  In the beginning, the upper threshold is set to a large value as the cosine distance measure is not very accurate. Over iterations, the upper threshold is decreased. 
+You may think this as a chicken and egg problem and the question is how to get a good start. The solution is having a good random initialization distribution. With standard initialization techniques, even with random model weights output is related to the inputs  ( behaving like [extreme learning machine](https://en.wikipedia.org/wiki/Extreme_learning_machine) ). Hence cosine distance of the features is somewhat meaningful in the beginning.  In the beginning, the upper threshold is set to a large value as the cosine distance measure is not very accurate. Over iterations, the upper threshold is decreased. 
 
 ## Conclusion 
 
