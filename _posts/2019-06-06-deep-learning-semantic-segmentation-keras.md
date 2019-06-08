@@ -2,7 +2,7 @@
 
 layout: post
 
-title:  "A Beginner's guide to Deep Learning based Semantic Segmentation using Keras"
+title:  "A Beginner's guide to Deep Learning"
 
 author: divam
 
