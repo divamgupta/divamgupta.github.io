@@ -412,7 +412,7 @@ After selecting the base network we have to select the segmentation architecture
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image8.png?style=centerme)
 
 
-**UNet** :  The UNet architecture adopts an encoder-decoder framework with skip connections. Like SegNet, the encoder and decoder  layers are symmetrical to each other. Here, upsampling is achieved using transposed convolution layers. 
+**UNet** :  The UNet architecture adopts an encoder-decoder framework with skip connections. Like SegNet, the encoder and decoder  layers are symmetrical to each other.  
 
 
 
