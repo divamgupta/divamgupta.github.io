@@ -1,7 +1,7 @@
 # Site
 name: "Divam Gupta"
-description: "Blog ..."
-meta_description: "Blog ..."
+description: "I'm a research fellow at Microsoft Research. I blog about Machine Learning and Deep Learning."
+meta_description: "I'm a research fellow at Microsoft Research. I blog about Machine Learning and Deep Learning."
 logo: 'assets/images/log.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -20,10 +20,15 @@ authors:
     twitter: https://twitter.com/divamgupta
     description: "I am a Research Fellow at Microsoft Research (MSR) working on deep learning based unsupervised learning algorithms. My research interests lie broadly in applied machine learning, computer vision and natural language processing."
 
+
+url: "https://divamgupta.com"
+
 # Plugins
 plugins: 
   - jekyll-paginate
   - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
     
 # Archives
 jekyll-archives:
