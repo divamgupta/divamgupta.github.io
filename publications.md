@@ -20,7 +20,12 @@ comments: false
             <b>Divam Gupta</b>, Ramachandran Ramjee, Nipun Kwatra, Muthian Sivathanu
         </h6>
         <h6  style="font-weight: 500; margin-bottom: 0.5rem; " >
-            NeurIPS 2019 <b>Currently Under Review </b>
+            ICLR 2020 <b>Currently Under Review </b>
+        </h6>
+        <h6 style="font-weight: 500; margin-bottom: 0.5rem; " >
+            <p>
+            <a href="https://openreview.net/forum?id=rJlnxkSYPS">Paper</a> 
+            </p>
         </h6>
         
       </div>
