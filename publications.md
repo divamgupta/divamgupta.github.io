@@ -20,7 +20,7 @@ comments: false
             <b>Divam Gupta</b>, Ramachandran Ramjee, Nipun Kwatra, Muthian Sivathanu
         </h6>
         <h6  style="font-weight: 500; margin-bottom: 0.5rem; " >
-            ICLR 2020 <b>Currently Under Review </b>
+            ICLR 2020 <b>Accepted!</b>
         </h6>
         <h6 style="font-weight: 500; margin-bottom: 0.5rem; " >
             <p>
