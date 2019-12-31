@@ -78,7 +78,7 @@ Automated segmentation of body scans can help doctors to perform diagnostic test
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image3.png?style=centerme)
-*Tumor segmentation of brain MRI scan. [Image source](https://arxiv.org/pdf/1505.03540v3.pdf) *
+*Tumor segmentation of brain MRI scan. [Image source](https://arxiv.org/pdf/1505.03540v3.pdf)*
 {: style="font-size: 80%; text-align: center;"}
 
 
@@ -126,7 +126,7 @@ For the case of image classification, we need to map the spatial tensor from the
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image1.png?style=centerme)
-*Spatial tensor is downsampled and converted to a vector*
+*Spatial tensor is downsampled and converted to a vector [Image source](https://medium.com/@himadrisankarchatterjee)*
 {: style="font-size: 80%; text-align: center;"}
 
 For the task of semantic segmentation, we need to retain the spatial information, hence no fully connected layers are used. That’s why they are called **fully convolutional networks**. The convolutional layers coupled with downsampling layers produce a low-resolution tensor containing the high-level information. 
@@ -140,7 +140,7 @@ This is called an **encoder-decoder** structure. Where the layers which downsamp
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image5.png?style=centerme)
-*Encoder-Decoder architecture*
+*Encoder-Decoder architecture [Image source](https://www.semanticscholar.org/paper/SSeg-LSTM%3A-Semantic-Scene-Segmentation-for-Syed-Morris/b5e4abb8c1bebf7d531202e57e431c638dd1c4af)*
 {: style="font-size: 80%; text-align: center;"}
 
 When the model is trained for the task of semantic segmentation, the encoder outputs a tensor containing information about the objects, and its shape and size. The decoder takes this information and produces the segmentation maps. 
@@ -157,7 +157,7 @@ To make up for the information lost, we let the decoder access the low-level fea
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image6.png?style=centerme)
-*Encoder-Decoder with skip connections*
+*Encoder-Decoder with skip connections [Image source](https://www.groundai.com/project/fastventricle-cardiac-segmentation-with-enet/)*
 {: style="font-size: 80%; text-align: center;"}
 
 The skip connections from the earlier layers provide the necessary information to the decoder layers which is required for creating accurate boundaries. 
@@ -400,7 +400,7 @@ After selecting the base network we have to select the segmentation architecture
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image2.png?style=centerme)
-*Architecture of FCN32*
+*Architecture of FCN32 [Image source](https://arxiv.org/pdf/1411.4038.pdf)*
 {: style="font-size: 80%; text-align: center;"}
 
 **SegNet** : The SegNet architecture adopts an encoder-decoder framework. The encoder and decoder  layers are symmetrical to each other. The upsampling operation of the decoder layers use the max-pooling indices of the corresponding encoder layers. SegNet does not have any skip connections. Unlike FCN, no learnable parameters are used for upsampling. 
@@ -419,7 +419,7 @@ After selecting the base network we have to select the segmentation architecture
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image12.png?style=centerme)
-
+*Architecture of UNet [Image source](https://arxiv.org/pdf/1505.04597.pdf)*
 
 **PSPNet** : The Pyramid Scene Parsing Network is optimized to learn better global context representation of a scene. First, the image is passed to the base network to get a feature map. The the feature map is downsampled to different scales. Convolution is applied to the pooled feature maps. After that, all the feature maps are upsampled to a common scale and concatenated together. Finally a another convolution layer is used to produce the final segmentation outputs. Here, the smaller objects are captured well by the features pooled to a high resolution, whereas the large objects are captured by the features pooled to a smaller size. 
 
@@ -428,6 +428,7 @@ After selecting the base network we have to select the segmentation architecture
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image11.png?style=centerme)
+*Architecture of PSPNet [Image source](https://arxiv.org/pdf/1612.01105.pdf)*
 
 
 For images containing indoor and outdoor scenes, PSPNet is preferred, as the objects are often present in different sizes. Here the model input size should be fairly large, something around 500x500.
