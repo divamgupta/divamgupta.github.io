@@ -420,6 +420,7 @@ After selecting the base network we have to select the segmentation architecture
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image12.png?style=centerme)
 *Architecture of UNet [Image source](https://arxiv.org/pdf/1505.04597.pdf)*
+{: style="font-size: 80%; text-align: center;"}
 
 **PSPNet** : The Pyramid Scene Parsing Network is optimized to learn better global context representation of a scene. First, the image is passed to the base network to get a feature map. The the feature map is downsampled to different scales. Convolution is applied to the pooled feature maps. After that, all the feature maps are upsampled to a common scale and concatenated together. Finally a another convolution layer is used to produce the final segmentation outputs. Here, the smaller objects are captured well by the features pooled to a high resolution, whereas the large objects are captured by the features pooled to a smaller size. 
 
@@ -429,7 +430,7 @@ After selecting the base network we have to select the segmentation architecture
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image11.png?style=centerme)
 *Architecture of PSPNet [Image source](https://arxiv.org/pdf/1612.01105.pdf)*
-
+{: style="font-size: 80%; text-align: center;"}
 
 For images containing indoor and outdoor scenes, PSPNet is preferred, as the objects are often present in different sizes. Here the model input size should be fairly large, something around 500x500.
 
