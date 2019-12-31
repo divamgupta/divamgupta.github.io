@@ -24,7 +24,7 @@ comments: false
         </h6>
         <h6 style="font-weight: 500; margin-bottom: 0.5rem; " >
             <p>
-            <a href="https://openreview.net/forum?id=rJlnxkSYPS">Paper</a> 
+            <a href="https://openreview.net/forum?id=rJlnxkSYPS">Paper</a> / Code coming soon
             </p>
         </h6>
         
