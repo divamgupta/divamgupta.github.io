@@ -78,7 +78,7 @@ Automated segmentation of body scans can help doctors to perform diagnostic test
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image3.png?style=centerme)
-*Tumor segmentation of brain MRI scan*
+*Tumor segmentation of brain MRI scan. [Image source](https://arxiv.org/pdf/1505.03540v3.pdf) *
 {: style="font-size: 80%; text-align: center;"}
 
 
@@ -91,7 +91,7 @@ Autonomous vehicles such as self-driving cars and drones can benefit from automa
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image10.png?style=centerme)
-*Segmentation of a road scene*
+*Segmentation of a road scene [Image source](https://thegradient.pub/semantic-segmentation/)*
 {: style="font-size: 80%; text-align: center;"}
 
 
@@ -104,7 +104,7 @@ Aerial images can be used to segment different types of land. Automated land map
 
 
 ![]({{ site.baseurl }}/assets/images/posts/imgseg/image9.png?style=centerme)
-*Segmentation of a satellite image*
+*Segmentation of a satellite image [Image source](https://www.semanticscholar.org/paper/Deep-Fusion-of-Imaging-Modalities-for-Semantic-of-Sundelius/59cbe15b43e6ca172fce40786be68340f50be541/figure/52)*
 {: style="font-size: 80%; text-align: center;"}
 
 
