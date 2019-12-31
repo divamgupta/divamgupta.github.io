@@ -442,9 +442,9 @@ If you don't want to write your own model, you can import ready to use models fr
 
 
 ```
-import keras_segmentation
+from keras_segmentation.models.unet import vgg_unet
 
-model = keras_segmentation.models.unet.vgg_unet(n_classes=51 ,  input_height=416, input_width=608  )
+model = vgg_unet(n_classes=51 ,  input_height=416, input_width=608  )
 ```
 
 
@@ -485,7 +485,8 @@ We can also get predictions from a saved model, which would automatically load t
 
 
 ```
-from keras_segmentation import predict
+from keras_segmentation.predict import predict
+
 
 predict( 
 	checkpoints_path="checkpoints/vgg_unet_1", 
@@ -499,7 +500,8 @@ To get predictions of multiple images in a directory.
 
 
 ```
-from keras_segmentation import predict_multiple
+from keras_segmentation.predict import predict_multiple
+
 
 predict_multiple( 
 	checkpoints_path="checkpoints/vgg_unet_1", 
