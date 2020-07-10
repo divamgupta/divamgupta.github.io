@@ -77,7 +77,7 @@ comments: false
         </h6>
         <h6 style="font-weight: 500; margin-bottom: 0.5rem; " >
             <p>
-            <a href="#">Paper</a> / <a href="https://github.com/divamgupta/mttdsc">Code</a>
+            <a href="https://arxiv.org/pdf/1902.02930.pdf">Paper</a> / <a href="https://github.com/divamgupta/mttdsc">Code</a>
             </p>
         </h6>
         
