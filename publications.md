@@ -24,7 +24,7 @@ comments: false
         </h6>
         <h6 style="font-weight: 500; margin-bottom: 0.5rem; " >
             <p>
-            <a href="https://openreview.net/pdf?id=rJlnxkSYPS">Paper</a> / <a href="https://github.com/divamgupta/deep_clustering_kingdra">Code</a>
+            <a href="https://openreview.net/pdf?id=rJlnxkSYPS">Paper</a> / <a href="https://github.com/divamgupta/deep_clustering_kingdra">Code</a>  / <a href="assets/iclr2020_slides.pdf">Slides</a>
             </p>
         </h6>
         
