@@ -6,7 +6,7 @@ categories: [ unsupervised-learning ]
 comments: true
 hidden: false
 image: "assets/images/posts/deep_cluster/teaser.png"
-featured: true
+featured: false
 ---
 
 This post gives an overview of various deep learning based clustering techniques. I will be explaining the latest advances in unsupervised clustering which achieve the state-of-the-art performance by leveraging deep learning.
