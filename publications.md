@@ -35,6 +35,32 @@ comments: false
 
 <div class="row pub-item-row">
       <div class="col-md-4">
+        <img src="assets/images/sbevnet_img.png" class="img-responsive center-block img-rounded" alt="" style="max-height:300px">
+      </div>
+
+      <div class="col-md-8">
+        <h5 class="item-title" style="font-weight: 700; margin-bottom: 0.5rem; ">
+            SBEVNet: End-to-End Deep Stereo Layout Estimation
+        </h5>
+        <h6  style="font-weight: 500; margin-bottom: 0.5rem; ">
+            <b>Divam Gupta</b>, Wei Pu, Trenton Tabor, Jeff Schneider
+        </h6>
+        <h6  style="font-weight: 500; margin-bottom: 0.5rem; " >
+            arXiv
+        </h6>
+        <h6 style="font-weight: 500; margin-bottom: 0.5rem; " >
+            <p>
+            <a href="https://arxiv.org/pdf/2105.11705">Paper</a> / Code coming soon.
+        </h6>
+        
+      </div>
+</div>
+
+---
+
+
+<div class="row pub-item-row">
+      <div class="col-md-4">
         <img src="assets/images/gnet_2.png" class="img-responsive center-block img-rounded" alt="" style="max-height:300px">
       </div>
 
