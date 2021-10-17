@@ -46,11 +46,11 @@ comments: false
             <b>Divam Gupta</b>, Wei Pu, Trenton Tabor, Jeff Schneider
         </h6>
         <h6  style="font-weight: 500; margin-bottom: 0.5rem; " >
-            arXiv
+            2022 Winter Conference on Applications of Computer Vision (<b>WACV 2022</b>)
         </h6>
         <h6 style="font-weight: 500; margin-bottom: 0.5rem; " >
             <p>
-            <a href="https://arxiv.org/pdf/2105.11705">Paper</a> / Code coming soon.
+            <a href="https://arxiv.org/pdf/2105.11705">Paper</a> / <a href="https://github.com/divamgupta/sbevnet-stereo-layout-estimation">Code</a>
             </p>
         </h6>
         
