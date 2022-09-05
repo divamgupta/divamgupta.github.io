@@ -35,17 +35,11 @@
     @media screen and (min-width: 900px ){
 
         .toggjgr {
-            padding-bottom: 132px   !important  ; 
-            padding-top: 132px  !important ; 
+            padding-bottom: 52px   !important  ; 
+            padding-top: 42px  !important ; 
         }
 
-        .bandu{
-            font-size: 35px   !important  ; 
-        }
-
-        .doosrabandu{
-            font-size: 22px  !important  ;
-        }
+   
     }
 
 
@@ -55,6 +49,32 @@
         }
 
 
+
+        @media (max-width: 576px) {
+          .hide-sm{
+            display: none;
+          }
+
+        }
+
+        @media (max-width: 876px) {
+          .main_profile_pic{
+             margin-bottom: 25px;
+          }
+
+          .profile_heror{
+            padding-top: 17px !important;
+            padding-bottom: 17px !important;
+          }
+
+        }
+
+        @media (min-width: 576px) {
+          .show-sm{
+            display: none;
+          }
+          
+        }
 
 </style>
 
@@ -80,32 +100,19 @@
 
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-dark  fixed-top mediumnavigation nav-down" style="background-color: rgb(0,0,0) ; {% if page.url == "/" %} position: static ; display:block; padding-bottom: 15px; {% endif %} ">
+<nav class="navbar navbar-expand-lg navbar-light bg-white  fixed-top mediumnavigation nav-down" style=" ">
     
 
-    {% if page.url == "/" %}
-    <div class="container pr-0 toggjgr" style=" padding-bottom: 56px  ; padding-top: 56px ; display:block">   
-      <!-- Begin Logo -->
-        <a style="font-size: 23px ;" class="navbar-brand bandu" href="{{ site.baseurl }}/">
-        <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
-        Divam Gupta's Blog
-        </a>
-        <br>
-        <h2 class="doosrabandu" style="color: #B1AEAE ; font-size: 17px; font-weight: 400 ">I'm a graduate student at Carnegie Mellon University. I blog about Machine Learning and Deep Learning.</h2>
-        <!-- End Logo -->
-    </div>
-    {% endif %}
+
 
     <div class="container pr-0">    
 
-        {% if page.url != "/" %}
             <!-- Begin Logo -->
             <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
+            <img style="opacity:0.6" src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
             Divam Gupta
             </a>
             <!-- End Logo -->
-        {% endif %}
 
 
        
@@ -184,7 +191,30 @@
 <div class="site-content">   
 <div class="container">
     
-    
+
+{% if page.url == "/" %}
+<div class="container pr-0 toggjg profile_heror" style=" padding-bottom: 56px  ; padding-top: 56px ; display:block">   
+
+    <div class="row">
+
+        <div class="col-md-3 pl-0 main_profile_pic" style=" padding-right: 60px;"> 
+            <img src="https://www.gravatar.com/avatar/9a823cb5c633fa70ef0c7b92e0d770df?s=250&d=mm&r=x">
+        </div>
+
+        <div class="col-md-9 pl-0"> 
+            <h4>Hello!</h4>
+            <p class="doosrabandu" style="font-size: 18px; font-weight: 300 ">
+
+                I’m a computer scientist passionate about working on AI for the real world. Currently, I am working towards achieving VR social telepresence at <a href="https://tech.fb.com/ar-vr/" target="_blank">Meta Reality Labs</a>. Before that, I did research at <a href="https://www.ri.cmu.edu/" target="_blank">Carnegie Mellon University</a> and <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>. 
+                <br>
+                I am also the creator of <a href="https://liner.ai/"  >Liner.ai</a> - a one-click tool for training ML models.  I’ve created open source tools which are used by thousands of people.  In my free time, I experiment with art and music production.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+{% endif %}
     
 <!-- Content
 ================================================== --> 

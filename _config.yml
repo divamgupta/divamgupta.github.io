@@ -1,7 +1,7 @@
 # Site
 name: "Divam Gupta"
-description: "I'm a graduate student at Carnegie Mellon University. I blog about Machine Learning and Deep Learning."
-meta_description: "I'm a graduate student at Carnegie Mellon University. I blog about Machine Learning and Deep Learning."
+description: "I work on AI for the real world. I’m currently at Meta Reality Labs and also the creator of Liner.ai."
+meta_description: "I work on AI for the real world. I’m currently at Meta Reality Labs and also the creator of Liner.ai."
 logo: 'assets/images/log.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -18,7 +18,7 @@ authors:
     email: guptadivam@gmail.com
     web: https://divamgupta.com
     twitter: https://twitter.com/divamgupta
-    description: "I am currently a graduate student at the Robotics Institute, Carnegie Mellon University. Before that, I was a Research Fellow at Microsoft Research (MSR) India working on deep learning based unsupervised learning algorithms. My research interests lie broadly in applied machine learning, computer vision and natural language processing."
+    description: "I’m a computer scientist passionate about working on AI for the real world. Currently, I am working towards achieving VR social telepresence at Meta Reality Labs. Before that, I did research at Carnegie Mellon University and Microsoft Research."
 
 
 url: "https://divamgupta.com"
